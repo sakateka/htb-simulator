@@ -465,7 +465,8 @@ char* trim_whitespace(char *str) {
 }
 
 void thread_logger_name(char* color, char* name) {
-    asprintf(&LOGGER_NAME, "%s%-8s%s", color, name, COLOR_RESET);
+    int n = asprintf(&LOGGER_NAME, "%s%-8s%s", color, name, COLOR_RESET);
+    (void)n;
 }
 
 u64 fmt_log_time(char* buf, u64 buf_size) {

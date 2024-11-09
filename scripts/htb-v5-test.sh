@@ -6,7 +6,7 @@ set 1 rate=500 burst=5000 consume=1 thread=10
 set 2 rate=300 burst=6000 consume=90 thread=10
 set 3 rate=50 burst=5000 consume=10
     slp 0.2
-    dbg 1
+    dbg
     slp 0.3
     dbg 1
     slp 0.5
